@@ -1,6 +1,7 @@
 import {
   ClerkProvider, SignedIn, UserButton
 } from '@clerk/nextjs'
+import { Toaster } from 'react-hot-toast';
 
 
 import type { Metadata } from "next";
@@ -30,6 +31,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={OpenSans.className}>
+          <Toaster />
           <div className={styles.container}>
 
 
