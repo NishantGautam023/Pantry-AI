@@ -1,18 +1,20 @@
+import {
+  ClerkProvider, SignedIn, UserButton
+} from '@clerk/nextjs'
+
+
 import type { Metadata } from "next";
 
-import { Open_Sans } from "next/font/google"
+import { Open_Sans } from "next/font/google";
+import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import styles from "./layout.module.css";
 
 const OpenSans = Open_Sans({
   subsets: ["latin"],
-  weight: "400"
-})
-
-
-import "./globals.css";
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Pantry System",
@@ -25,14 +27,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={OpenSans.className}>
-        <div className={styles.container}>
-          <Header />
-          <main className={styles.main}>{children}</main>
-          <Footer />
-        </div>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={OpenSans.className}>
+          <div className={styles.container}>
+
+
+
+            <Header />
+            <main className={styles.main}>{children}</main>
+            <Footer />
+          </div>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

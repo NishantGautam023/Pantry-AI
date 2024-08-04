@@ -3,6 +3,14 @@ import styles from "./Header.module.css";
 import Link from "next/link";
 import PantryPic from "../../../public/images/pantry.png"
 
+import {
+    SignInButton,
+    SignedIn,
+    SignedOut,
+    UserButton
+}
+    from '@clerk/nextjs'
+
 export default function Header() {
     return (
         <header className={styles.header}>
@@ -32,9 +40,14 @@ export default function Header() {
                     </ul>
                 </nav>
                 <div className={styles.btnWrap}>
-                    <Link href="/login" className={styles.btn}>
-                        Login
-                    </Link>
+                    <SignedOut>
+                        <Link href="/sign-in">
+                            <button className={styles.btn}>Login</button>
+                        </Link>
+                    </SignedOut>
+                    <SignedIn>
+                        <UserButton />
+                    </SignedIn>
                 </div>
             </div>
         </header>
