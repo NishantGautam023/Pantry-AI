@@ -1,4 +1,4 @@
-import styles from './Dashboard.module.css'; // Import your CSS module
+import styles from "./dashboard.module.css"
 import Image from 'next/image';
 
 import AddIcon from "../../../public/images/add.png"

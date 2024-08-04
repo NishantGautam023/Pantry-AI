@@ -1,9 +1,9 @@
 import Image from "next/image";
-import styles from "./Header.module.css";
 import Link from "next/link";
-import PantryPic from "../../public/images/Pantry.png"
+import PantryPic from "../../../public/images/pantry.png"
 
 import {
+    SignInButton,
     SignedIn,
     SignedOut,
     UserButton
@@ -40,9 +40,9 @@ export default function Header() {
                 </nav>
                 <div className={styles.btnWrap}>
                     <SignedOut>
-                        <Link href="/sign-in">
+                        <SignInButton mode="modal">
                             <button className={styles.btn}>Login</button>
-                        </Link>
+                        </SignInButton>
                     </SignedOut>
                     <SignedIn>
                         <UserButton />
