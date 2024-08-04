@@ -1,0 +1,24 @@
+.viewProductsContainer {
+    padding: 2rem;
+}
+
+.productList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.productItem {
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.productItem h3 {
+    margin: 0;
+}
+
+.productItem p {
+    margin: 0.5rem 0 0;
+}

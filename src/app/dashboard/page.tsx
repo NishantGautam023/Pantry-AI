@@ -42,7 +42,9 @@ export default function Dashboard() {
                 <div className={styles.actionCard}>
                     <Image src={viewInventoryIcon} alt="View Inventory" width={200} height={200} />
                     <h3>View Inventory</h3>
-                    <button>Go to Inventory</button>
+                    <Link href="/view-product">
+                        <button>Go to Inventory</button>
+                    </Link>
                 </div>
                 <div className={styles.actionCard}>
                     <Image src={productIcon} alt="Add New Product" width={200} height={200} />
