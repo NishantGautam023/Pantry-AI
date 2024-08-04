@@ -1,14 +1,14 @@
 import Image from "next/image";
-import styles from "./Header.module.css";
+import styles from "./Header.module.css"; // Change to lowercase 'styles'
+
 import Link from "next/link";
-import PantryPic from "../../public/images/Pantry.png"
+import PantryPic from "../../public/images/Pantry.png";
 
 import {
     SignedIn,
     SignedOut,
     UserButton
-}
-    from '@clerk/nextjs'
+} from '@clerk/nextjs';
 
 export default function Header() {
     return (
