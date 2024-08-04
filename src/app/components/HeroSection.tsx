@@ -4,8 +4,8 @@ import PantryImage from "../../../public/images/pantryHome.png"
 import Link from 'next/link';
 
 
-export default function HeroSection() {
 
+export default function HeroSection() {
 
 
 

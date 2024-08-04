@@ -1,0 +1,19 @@
+.container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.homeLink {
+    color: #0070f3;
+    text-decoration: underline;
+}
