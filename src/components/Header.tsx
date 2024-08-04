@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Header.module.css";
 import Link from "next/link";
-import PantryPic from "../../../public/images/pantry.png"
+import PantryPic from "../../public/images/Pantry.png"
 
 import {
     SignInButton,

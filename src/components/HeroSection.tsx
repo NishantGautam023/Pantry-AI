@@ -1,6 +1,6 @@
 import styles from './HeroSection.module.css';
 import Image from 'next/image';
-import PantryImage from "../../../public/images/pantryHome.png"
+import PantryImage from "../../public/images/pantryHome.png"
 import Link from 'next/link';
 
 

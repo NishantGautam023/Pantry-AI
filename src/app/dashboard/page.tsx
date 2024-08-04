@@ -7,6 +7,7 @@ import analyticsIcon from "../../../public/images/analytics.png"
 import alertIcon from "../../../public/images/alert.png"
 import productIcon from "../../../public/images/product-icon.png"
 import viewInventoryIcon from "../../../public/images/view_invnetory.png"
+import Link from 'next/link';
 
 export default function Dashboard() {
     return (
@@ -46,7 +47,9 @@ export default function Dashboard() {
                 <div className={styles.actionCard}>
                     <Image src={productIcon} alt="Add New Product" width={200} height={200} />
                     <h3>Add New Product</h3>
-                    <button>Add Product</button>
+                    <Link href="/add-product">
+                        <button>Add Product</button>
+                    </Link>
                 </div>
                 <div className={styles.actionCard}>
                     <Image src={analyticsIcon} alt="View Analytics" height={200} width={200} />
